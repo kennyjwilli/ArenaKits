@@ -1,0 +1,11 @@
+name: ArenaKits
+main: net.vectorgaming.arenakits.ArenaKits
+version: 0.1
+author: Kenny Williams
+website: http://vectorgaming.net
+description: 
+  
+depend: [ZoneCore]
+
+commands:
+  
