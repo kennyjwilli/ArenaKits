@@ -125,7 +125,6 @@ public class KitManager
             {
                 String[] split = s.split(";");
                 int slotNumber = Integer.parseInt(split[0].split(":")[1]);
-                System.out.println(split[1]);
                 kit.addInventoryItem(slotNumber, ItemSLAPI.getItemStackFromSave(split[1]));
             }
             kits.put(name, kit);
@@ -160,7 +159,9 @@ public class KitManager
     public static void saveAllKits()
     {
         for(String s : kits.keySet())
+        {
             saveKit(s);
+        }
     }
     
     /**
